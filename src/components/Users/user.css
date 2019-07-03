@@ -1,0 +1,117 @@
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  margin: 20px;
+}
+
+.dd-button {
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 10px 30px 10px 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+
+.dd-button:hover {
+  background-color: #eeeeee;
+}
+
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  width: 180px;
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  list-style-type: none;
+}
+
+.dd-menu a {
+  padding: 5px;
+  display: block;
+  width: 100%;
+}
+
+.dd-menu a:hover {
+  background: #f1f2f3;
+}
+
+.dd-input + .dd-menu {
+  display: none;
+} 
+
+.dd-input:checked + .dd-menu {
+  display: block;
+} 
+
+.cardUser {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 362px;
+    padding: 20px 0;
+    text-align: center;
+    margin: 5px auto;
+    font-family: arial;
+    background: gainsboro;
+    color: #fff
+}
+
+.cardUser + h3 {
+  padding: 0 18px;
+  text-decoration: underline;
+}
+.cardUser a {
+  padding: 0 8px;
+}
+
+.cardUser .title {
+  color: grey;
+  font-size: 18px;
+}
+
+.cardUser button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.cardUser a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.cardUser button:hover, .cardUser a:hover {
+  opacity: 0.7;
+}
